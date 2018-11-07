@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title> Home - Garra </title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/png" href="imagens/favicon.png"/>
+        <link rel="stylesheet" href="css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="top-bar">
+            <div class="hamburger" onclick="tratarMenu()">
+                <div class="hamburger-primeiro" id="hamburger-primeiro"></div>
+                <div class="hamburger-segundo"  id="hamburger-segundo"></div>
+                <div class="hamburger-terceiro" id="hamburger-terceiro"></div>
+            </div>
+            <div class="logos-menu">
+               <a href="index.html"> <img src="imagens/logo.png" class="garra-logo"> </a>
+            </div>
+        </nav>
+
+        <div class="menu menu-escondido" id="menu">
+            <a href="index.html" class="opcao-menu"> <i class="fa fa-home"></i> Home      </a>
+            <a href="desafio.html" class="opcao-menu"> <i class="fa fa-car"></i>  O Desafio </a>
+            <a href="equipe.html" class="opcao-menu"> <i class="fa fa-users"></i> Equipe    </a>
+            <a href="cotuca.html" class="opcao-menu"> <i class="fa fa-university"></i> Cotuca    </a>
+            <a class="opcao-menu" onclick="tratarOpcoesIdioma()"> <i class="fa fa-caret-down" id="icone-idiomas"></i> Idioma    </a>
+            <div class="idiomas idiomas-escondido" id="idiomas">
+                <a href="index.html" class="opcao-menu idioma-menu"> <i class="fa fa-language"></i> Português </a>
+                <a href="english/index.html" class="opcao-menu idioma-menu"> <i class="fa fa-language"></i> Inglês    </a>
+            </div>
+        </div>
+
+        <div class="banner-home">
+            <img src="imagens/imagem-home.jpg" class="img-banner"  id="imagem-banner-home">
+            <div class="texto-banner-home">
+                <span class="titulo-banner"> Garra </span>
+                <span class="subtexto-banner"> Desafio Land Rover 4x4 nas Escolas </span>
+            </div>
+        </div>
+
+        <div class="home">
+            <div class="bloco-imagem-home">
+                <a href="desafio.html">
+                    <span class="titulo-bloco"> DESAFIO </span>
+                    <div class="imagem-bloco-container">
+                        <img  class="imagem-bloco" src="imagens/imagem-desafio.jpg" id="imagem-desafio-home">
+                    </div>
+                    <div class="legenda">
+                        <span class="legenda-bloco"> Veja mais sobre o desafio! </span>
+                    </div>
+                </a>
+            </div>
+            <div class="bloco-imagem-home">
+                <a href="equipe.html">
+                    <span class="titulo-bloco"> EQUIPE </span>
+                    <div class="imagem-bloco-container">
+                        <img  class="imagem-bloco" src="imagens/imagem-equipe.jpg" id="imagem-equipe-home">
+                    </div>
+                    <div class="legenda">
+                        <span class="legenda-bloco"> Descubra mais sobre a equipe! </span>
+                    </div>
+                </a>
+            </div>
+            <div class="bloco-imagem-home">
+                <a href="cotuca.html">
+                    <span class="titulo-bloco"> COTUCA </span>
+                    <div class="imagem-bloco-container">
+                        <img  class="imagem-bloco" src="imagens/imagem-cotuca.jpg"  id="imagem-cotuca-home" >
+                    </div>
+                    <div class="legenda">
+                        <span class="legenda-bloco"> Conheça mais sobre o COTUCA! </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <div class="conteudo-rodape">
+                <div class="topico-rodape">
+                    <span class="titulo-topico"> SITE </span> <br>
+                    <a href="index.html" class="informacao-topico">Home</a> <br>
+                    <a href="desafio.html" class="informacao-topico">O Projeto</a>
+                </div>
+                <div class="topico-rodape">
+                        <span class="titulo-topico"> SOBRE NÓS </span> <br>
+                        <a href="equipe.html" class="informacao-topico">Equipe</a> <br>
+                        <a href="cotuca.html" class="informacao-topico">Cotuca</a>
+                </div>
+                <div class="topico-rodape">
+                    <span class="titulo-topico"> VEJA MAIS </span> <br>
+                    <a href="https://www.facebook.com/equipegarra2018/">
+                        <i class="fa fa-facebook-official informacao-topico"></i> <span class="informacao-topico"> &nbsp; /equipegarra2018 </span>
+                    </a>
+                </div>
+                <div class="topico-rodape">
+                    <a href="https://www.landrover.com.br/index.html">
+                        <img src="imagens/landrover-logo.png" class="logo-rodape"> &nbsp;
+                    </a>
+                    <a href="http://www.4x4inschools.com/">
+                        <img src="imagens/4x4inschools-logo.png" class="logo-rodape">
+                    </a>
+                </div> 
+            </div>
+            <div class="copyright">
+                <span class="texto-copyright"> © 2018, Equipe GARRA - Desafio Land Rover 4x4 nas Escolas </span>
+            </div>
+        </div>
+
+        <script src="js/app.js"></script>
+
+        <script>
+            document.getElementById('imagem-banner-home').ondragstart = function() { return false; };
+            document.getElementById('imagem-equipe-home').ondragstart = function() { return false; };
+            document.getElementById('imagem-cotuca-home').ondragstart = function() { return false; };
+            document.getElementById('imagem-desafio-home').ondragstart = function() { return false; };
+
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '690394354672695',
+                    xfbml      : true,
+                    version    : 'v2.5'
+                });
+                init();
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            
+            function init() {
+                FB.api(
+                    '/equipegarra2018/feed?access_token=EAAJz6PZAD5DcBAJyZAFHE9X5iMJFgZBqiRjUm4IRDWdkkJ5AlrRMHYaZBZAFwwdgMEhZBBZBWC8dSouW9NhBd21i3DXyr6Ws7hBZCcRAA4QBMtOc2m364hDx9MALB48SCVmYT5xuRPi52iehZCuy6aJVHVvRmrApNLaq7wcCAOOhvcoLRsoqoQaeaMFhgHTwEPZBhyCuDaYmXntHlqgSlm1LVgvkU0wZCdZAJwYqOOusgK0HLQZDZD',
+                    'GET',
+                    {"fields":"created_time,message,attachments"},
+                    function(response) {
+                        console.log(response);
+                    }
+                );
+            }
+        </script>
+    </body>
+</html>

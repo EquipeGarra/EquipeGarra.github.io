@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title> Desafio - Garra </title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/png" href="imagens/favicon.png"/>
+        <link rel="stylesheet" href="css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <nav class="top-bar">
+            <div class="hamburger" onclick="tratarMenu()">
+                <div class="hamburger-primeiro" id="hamburger-primeiro"></div>
+                <div class="hamburger-segundo"  id="hamburger-segundo"></div>
+                <div class="hamburger-terceiro" id="hamburger-terceiro"></div>
+            </div>
+            <div class="logos-menu">
+               <a href="index.html"> <img src="imagens/logo.png" class="garra-logo"> </a>
+            </div>
+        </nav>
+
+        <div class="menu menu-escondido" id="menu">
+            <a href="index.html" class="opcao-menu"> <i class="fa fa-home"></i> Home      </a>
+            <a href="desafio.html" class="opcao-menu"> <i class="fa fa-car"></i>  O Desafio </a>
+            <a href="equipe.html" class="opcao-menu"> <i class="fa fa-users"></i> Equipe    </a>
+            <a href="cotuca.html" class="opcao-menu"> <i class="fa fa-university"></i> Cotuca    </a>
+            <a class="opcao-menu" onclick="tratarOpcoesIdioma()"> <i class="fa fa-caret-down" id="icone-idiomas"></i> Idioma    </a>
+            <div class="idiomas idiomas-escondido" id="idiomas">
+                <a href="desafio.html" class="opcao-menu idioma-menu"> <i class="fa fa-language"></i> Português </a>
+                <a href="english/challenge.html" class="opcao-menu idioma-menu"> <i class="fa fa-language"></i> Inglês    </a>
+            </div>
+        </div>
+
+        <div class="corpo">
+            
+            <div class="cabecalho-pagina">
+                <div class="titulo-pagina">
+                    <span> DESAFIO </span>    
+                </div>
+                <img src="imagens/cabecalho-desafio.jpg" class="imagem-cabecalho">
+            </div>
+
+            <div class="topico-pagina">
+                <div class="titulo-topico-pagina">
+                    <span> Qual é o desafio? </span>
+                </div>
+                <div class="texto-topico-pagina">
+                    <p> O Desafio 4x4 Jaguar Land Rover desafia os estudantes a construir um veículo de controle remoto com tração nas quatro rodas (4x4) 
+                        dentro das especificações fornecidas pelo Comitê Internacional de Regulamentos. Este veículo deve trilhar e passar por obstáculos 
+                        em uma pista de teste do tipo off road que é tão deasfiadora quanto uma trilha off road na vida real. O veículo deve emular as 
+                        capacidades de um veículo real 4x4. Cada equipe trará seu veículo em uma Final Regional para competir por um lugar na Final Nacional 
+                        de seu país. Os Campeões Nacionais de cada país são convidados então a competir na Final Mundial do Land Rover 4x4 in Schools.
+                    </p>
+                </div>
+            </div>
+
+            <div class="topico-pagina">
+                <div class="titulo-topico-pagina">
+                    <span> Propósito </span>
+                </div>
+                <div class="texto-topico-pagina">
+                    <p> 
+                        O propósito deste programa é o de aumentar a exposição, o interesse e entusiasmo em engenharia através da aplicação prática de 
+                        Projeto em CAD, Tecnologias, Matemática e Ciências Exatas. Como dito antes este desafio pode acontecer tanto dentro como fora da 
+                        sala de aula. Este projeto pode ser aplicado nas escolas dentro dos currículos extra curriculares.
+                    </p>
+                    <p>
+                        As indústrias requerem cada vez mais profissionais criativos, multidisciplinares capazes de resolver problemas através de 
+                        iniciativas individuais e trabalho em equipe. Este projeto replica situações da vida real onde especialistas trabalham em 
+                        equipe para compartilhar seus conhecimentos e ideias práticasvisando resolver problemas complexos. O desafio é uma excelente 
+                        oportunidade para estudantes trabalhar em grupos e entrar em contato com práticas de gestão de projeto e desenvolver habilidades
+                        chave, permitindo manter contatos com profissionais de empresas atuando como mentores ou embaixadores do projeto. Estes embaixadores 
+                        são engenheiros de várias companhias, incluindo Jaguar Land Rover, os quais poderão ajudar suas equipes atuando como 
+                        conselheiros / mentores, criando um forte vínculo com as indústrias.
+                    </p>
+                    <p>
+                        Veja mais no <a href="http://www.4x4inschools.com/"> site oficial do desafio! </a>
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+
+
+        <div class="rodape">
+            <div class="conteudo-rodape">
+                <div class="topico-rodape">
+                    <span class="titulo-topico"> SITE </span> <br>
+                    <a href="index.html" class="informacao-topico">Home</a> <br>
+                    <a href="desafio.html" class="informacao-topico">O Projeto</a>
+                </div>
+                <div class="topico-rodape">
+                        <span class="titulo-topico"> SOBRE NÓS </span> <br>
+                        <a href="equipe.html" class="informacao-topico">Equipe</a> <br>
+                        <a href="cotuca.html" class="informacao-topico">Cotuca</a>
+                </div>
+                <div class="topico-rodape">
+                    <span class="titulo-topico"> VEJA MAIS </span> <br>
+                    <a href="https://www.facebook.com/equipegarra2018/">
+                        <i class="fa fa-facebook-official informacao-topico"></i> <span class="informacao-topico"> &nbsp; /equipegarra2018 </span>
+                    </a>
+                </div>
+                <div class="topico-rodape">
+                    <a href="https://www.landrover.com.br/index.html">
+                        <img src="imagens/landrover-logo.png" class="logo-rodape"> &nbsp;
+                    </a>
+                    <a href="http://www.4x4inschools.com/">
+                        <img src="imagens/4x4inschools-logo.png" class="logo-rodape">
+                    </a>
+                </div> 
+            </div>
+            <div class="copyright">
+                <span class="texto-copyright"> © 2018, Equipe GARRA - Desafio Land Rover 4x4 nas Escolas </span>
+            </div>
+        </div>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
